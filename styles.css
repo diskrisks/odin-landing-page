@@ -3,10 +3,14 @@ html {
    
 }
 
+body {
+    margin: 0;
+}
+
 nav {
     background-color: #1F2937;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: bold;
@@ -22,10 +26,16 @@ nav {
     gap: 8px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
     background-color: #1F2937;
     color: #f9faf8;
     display: flex;
+    padding: 50px 50px;
 }
 
 .hero h1 {
@@ -38,16 +48,26 @@ nav {
     color: #e5e7eb !important;
 }
 
+.hero img {
+    margin-left: 50px;
+}
+
 button {
     background-color: #3882f6;
     border-radius: 7px;
     border-color: #FFFFFF;
     border-width: 1px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
 }
 
 .gallery{
     color: gray;
-    text-align: center;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 200px;
 }
 
 .gallery h2 {
@@ -57,10 +77,16 @@ button {
     font-weight: 900;
 }
 
+.carousel  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .carousel img {
     border: 5px solid #3882f6;
     border-radius: 7px;
-    display: flex;
 }
 
 .quote {
@@ -69,6 +95,7 @@ button {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+    padding: 30px;
 }
 
 .quote #thor {
@@ -80,9 +107,11 @@ button {
 
 .banner {
     background-color: #3882f6;
-    border-radius: 7px;
+    border-radius: 25px;
     color: lightgray;
     display: flex;
+    padding: 30px 80px;
+    margin: 20px;
 }
 
 .cta #ctabold {
@@ -90,8 +119,20 @@ button {
     color: #e5e7eb;
 }
 
+.cta button {
+    margin-left: auto;
+    align-self: center;
+}
+
 footer {
     background-color:#1F2937;
     color: lightgray;
     text-align: center;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
